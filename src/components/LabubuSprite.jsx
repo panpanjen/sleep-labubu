@@ -3,42 +3,42 @@ import { useEffect, useState } from 'react'
 // Maps each state to its image file and animation class
 const STATE_CONFIG = {
   happy: {
-    src: '/assets/labubu-happy.png',
+    src: './assets/labubu-happy.png',
     animation: 'animate-bounce-soft',
     glow: 'rgba(251, 191, 36, 0.3)',
   },
   neutral: {
-    src: '/assets/labubu-neutral.png',
+    src: './assets/labubu-neutral.png',
     animation: 'animate-float',
     glow: 'rgba(124, 58, 237, 0.2)',
   },
   sad: {
-    src: '/assets/labubu-sad.png',
+    src: './assets/labubu-sad.png',
     animation: '',   // slumped — no float
     glow: 'rgba(99, 102, 241, 0.15)',
   },
   sleepy: {
-    src: '/assets/labubu-sleepy.png',
+    src: './assets/labubu-sleepy.png',
     animation: 'animate-wobble',
     glow: 'rgba(99, 102, 241, 0.1)',
   },
   sleeping: {
-    src: '/assets/labubu-sleeping.png',
+    src: './assets/labubu-sleeping.png',
     animation: 'animate-float',
     glow: 'rgba(124, 58, 237, 0.25)',
   },
   'grumpy-morning': {
-    src: '/assets/labubu-grumpy-morning.png',
+    src: './assets/labubu-grumpy-morning.png',
     animation: 'animate-wobble',
     glow: 'rgba(251, 146, 60, 0.2)',
   },
   graduating: {
-    src: '/assets/labubu-graduating.png',
+    src: './assets/labubu-graduating.png',
     animation: 'animate-bounce-soft',
     glow: 'rgba(251, 191, 36, 0.5)',
   },
   'miss-you': {
-    src: '/assets/labubu-miss-you.png',
+    src: './assets/labubu-miss-you.png',
     animation: '',
     glow: 'rgba(99, 102, 241, 0.1)',
   },

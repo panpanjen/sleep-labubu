@@ -106,7 +106,7 @@ export default function TuckInScreen({ pet, onComplete, onBack }) {
         {phase === 'bedtime' && (
           <div className="flex flex-col items-center gap-6 animate-fade-in text-center w-full">
             <img
-              src="/assets/labubu-sleeping.png"
+              src="./assets/labubu-sleeping.png"
               alt="Labubu in bed"
               className="pixel-img"
               style={{ width: 200, height: 200, objectFit: 'contain' }}
@@ -136,7 +136,7 @@ export default function TuckInScreen({ pet, onComplete, onBack }) {
         {phase === 'stall' && (
           <div className="flex flex-col items-center gap-5 animate-fade-in text-center w-full">
             <img
-              src="/assets/labubu-neutral.png"
+              src="./assets/labubu-neutral.png"
               alt="Labubu stalling"
               className="pixel-img animate-float"
               style={{ width: 140, height: 140, objectFit: 'contain' }}
@@ -184,7 +184,7 @@ export default function TuckInScreen({ pet, onComplete, onBack }) {
         {phase === 'response' && chosenOption && (
           <div className="flex flex-col items-center gap-6 animate-fade-in text-center w-full">
             <img
-              src="/assets/labubu-happy.png"
+              src="./assets/labubu-happy.png"
               alt="Labubu reacting"
               className="pixel-img animate-bounce-soft"
               style={{ width: 140, height: 140, objectFit: 'contain' }}
@@ -208,7 +208,7 @@ export default function TuckInScreen({ pet, onComplete, onBack }) {
           <div className="flex flex-col items-center gap-6 animate-slide-up text-center w-full">
             <div className="relative">
               <img
-                src="/assets/labubu-sleeping.png"
+                src="./assets/labubu-sleeping.png"
                 alt="Labubu almost asleep"
                 className="pixel-img animate-float"
                 style={{ width: 200, height: 200, objectFit: 'contain' }}
@@ -271,7 +271,7 @@ function SleepingScene({ pet, onDone }) {
       {/* Bed scene */}
       <div className="relative">
         <img
-          src="/assets/labubu-sleeping.png"
+          src="./assets/labubu-sleeping.png"
           alt="Labubu sleeping"
           className="pixel-img animate-float"
           style={{ width: 220, height: 220, objectFit: 'contain' }}

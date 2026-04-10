@@ -92,7 +92,7 @@ export default function OnboardingScreen({ onComplete }) {
         {step === 0 && (
           <div className="flex flex-col items-center gap-6 animate-fade-in text-center">
             <img
-              src="/assets/labubu-happy.png"
+              src="./assets/labubu-happy.png"
               alt="Labubu"
               className="pixel-img animate-bounce-soft"
               style={{ width: 160, height: 160, objectFit: 'contain' }}
@@ -124,7 +124,7 @@ export default function OnboardingScreen({ onComplete }) {
         {step === 1 && (
           <div className="flex flex-col items-center gap-6 animate-fade-in w-full">
             <img
-              src="/assets/labubu-neutral.png"
+              src="./assets/labubu-neutral.png"
               alt="Labubu"
               className="pixel-img animate-float"
               style={{ width: 120, height: 120, objectFit: 'contain' }}
@@ -162,7 +162,7 @@ export default function OnboardingScreen({ onComplete }) {
         {step === 2 && (
           <div className="flex flex-col items-center gap-6 animate-fade-in w-full">
             <img
-              src="/assets/labubu-happy.png"
+              src="./assets/labubu-happy.png"
               alt="Labubu"
               className="pixel-img animate-bounce-soft"
               style={{ width: 120, height: 120, objectFit: 'contain' }}
@@ -214,7 +214,7 @@ export default function OnboardingScreen({ onComplete }) {
         {step === 3 && (
           <div className="flex flex-col items-center gap-6 animate-fade-in w-full">
             <img
-              src="/assets/labubu-sleeping.png"
+              src="./assets/labubu-sleeping.png"
               alt="Labubu sleeping"
               className="pixel-img animate-float"
               style={{ width: 140, height: 140, objectFit: 'contain' }}
@@ -250,7 +250,7 @@ export default function OnboardingScreen({ onComplete }) {
         {step === 4 && (
           <div className="flex flex-col items-center gap-6 animate-fade-in w-full">
             <img
-              src="/assets/labubu-grumpy-morning.png"
+              src="./assets/labubu-grumpy-morning.png"
               alt="Labubu grumpy"
               className="pixel-img animate-wobble"
               style={{ width: 130, height: 130, objectFit: 'contain' }}
@@ -302,7 +302,7 @@ function RitualSlide({ slide, onNext, isLast, labubuName }) {
     <div className="flex flex-col items-center gap-6 animate-fade-in text-center w-full">
       <div className="text-4xl">{slide.emoji}</div>
       <img
-        src={`/assets/labubu-${slide.sprite}.png`}
+        src={`./assets/labubu-${slide.sprite}.png`}
         alt={slide.title}
         className="pixel-img animate-float"
         style={{ width: 130, height: 130, objectFit: 'contain' }}

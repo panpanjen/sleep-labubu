@@ -223,7 +223,7 @@ export default function DiaryScreen({ pet, onNavigate }) {
       {/* ── Empty state ── */}
       {!loading && logs.length === 0 && (
         <div className="flex-1 flex flex-col items-center justify-center px-6 relative z-10">
-          <img src="/assets/labubu-sleeping.png" alt="Labubu"
+          <img src="./assets/labubu-sleeping.png" alt="Labubu"
             className="pixel-img animate-float"
             style={{ width: 90, height: 90, objectFit: 'contain' }}
           />

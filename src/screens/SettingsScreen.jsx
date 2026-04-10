@@ -72,7 +72,7 @@ export default function SettingsScreen({ pet, user, onNavigate, onUpdate, onRese
           <div
             className="border-2 border-red-500 bg-purple-950 px-6 py-6 max-w-xs text-center animate-pop-in"
           >
-            <img src="/assets/labubu-sad.png" alt="Labubu sad"
+            <img src="./assets/labubu-sad.png" alt="Labubu sad"
               className="pixel-img mx-auto mb-4 animate-wobble"
               style={{ width: 90, height: 90, objectFit: 'contain' }}
             />
@@ -93,7 +93,7 @@ export default function SettingsScreen({ pet, user, onNavigate, onUpdate, onRese
       {showConfirm && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/75">
           <div className="border-2 border-red-500 bg-purple-950 px-6 py-6 max-w-xs text-center">
-            <img src="/assets/labubu-sad.png" alt="Labubu sad"
+            <img src="./assets/labubu-sad.png" alt="Labubu sad"
               className="pixel-img mx-auto mb-3"
               style={{ width: 80, height: 80, objectFit: 'contain' }}
             />

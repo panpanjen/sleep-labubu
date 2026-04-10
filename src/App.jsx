@@ -79,7 +79,7 @@ export default function App() {
       >
         <div className="flex flex-col items-center gap-4">
           <img
-            src="/assets/labubu-sleeping.png"
+            src="./assets/labubu-sleeping.png"
             alt="Loading"
             className="pixel-img animate-float"
             style={{ width: 120, height: 120, objectFit: 'contain' }}

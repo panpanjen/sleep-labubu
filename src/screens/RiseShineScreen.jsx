@@ -24,10 +24,10 @@ const SCORE_REACTIONS = {
 }
 
 const SPRITE_FOR_STATE = {
-  happy:   '/assets/labubu-happy.png',
-  neutral: '/assets/labubu-neutral.png',
-  sad:     '/assets/labubu-sad.png',
-  sleepy:  '/assets/labubu-sleepy.png',
+  happy:   './assets/labubu-happy.png',
+  neutral: './assets/labubu-neutral.png',
+  sad:     './assets/labubu-sad.png',
+  sleepy:  './assets/labubu-sleepy.png',
 }
 
 // ─── Phases: sleeping → grumpy1 → quiz? → checkin → score → tip ──────────────
@@ -173,7 +173,7 @@ export default function RiseShineScreen({ pet, onComplete, onBack }) {
         {phase === 'sleeping' && (
           <div className="flex flex-col items-center gap-6 animate-fade-in text-center w-full">
             <div className="relative">
-              <img src="/assets/labubu-sleeping.png" alt="Labubu sleeping"
+              <img src="./assets/labubu-sleeping.png" alt="Labubu sleeping"
                 className="pixel-img animate-float"
                 style={{ width: 200, height: 200, objectFit: 'contain' }}
               />
@@ -200,7 +200,7 @@ export default function RiseShineScreen({ pet, onComplete, onBack }) {
         {/* ── grumpy1 ── */}
         {phase === 'grumpy1' && (
           <div className="flex flex-col items-center gap-6 animate-fade-in text-center w-full">
-            <img src="/assets/labubu-grumpy-morning.png" alt="Labubu grumpy"
+            <img src="./assets/labubu-grumpy-morning.png" alt="Labubu grumpy"
               className="pixel-img animate-wobble"
               style={{ width: 180, height: 180, objectFit: 'contain' }}
             />
@@ -231,7 +231,7 @@ export default function RiseShineScreen({ pet, onComplete, onBack }) {
         {/* ── quiz ── */}
         {phase === 'quiz' && !quizAnswered && (
           <div className="flex flex-col items-center gap-5 animate-fade-in text-center w-full">
-            <img src="/assets/labubu-grumpy-morning.png" alt="Labubu"
+            <img src="./assets/labubu-grumpy-morning.png" alt="Labubu"
               className="pixel-img animate-wobble"
               style={{ width: 120, height: 120, objectFit: 'contain' }}
             />
@@ -262,7 +262,7 @@ export default function RiseShineScreen({ pet, onComplete, onBack }) {
         {phase === 'quiz' && quizAnswered && (
           <div className="flex flex-col items-center gap-6 animate-fade-in text-center w-full">
             <img
-              src={quizCorrect ? '/assets/labubu-happy.png' : '/assets/labubu-neutral.png'}
+              src={quizCorrect ? './assets/labubu-happy.png' : './assets/labubu-neutral.png'}
               alt="Labubu"
               className={`pixel-img ${quizCorrect ? 'animate-bounce-soft' : 'animate-float'}`}
               style={{ width: 140, height: 140, objectFit: 'contain' }}
@@ -285,7 +285,7 @@ export default function RiseShineScreen({ pet, onComplete, onBack }) {
         {/* ── checkin ── */}
         {phase === 'checkin' && (
           <div className="flex flex-col items-center gap-5 animate-slide-up w-full">
-            <img src="/assets/labubu-neutral.png" alt="Labubu"
+            <img src="./assets/labubu-neutral.png" alt="Labubu"
               className="pixel-img animate-float"
               style={{ width: 90, height: 90, objectFit: 'contain' }}
             />
@@ -362,7 +362,7 @@ export default function RiseShineScreen({ pet, onComplete, onBack }) {
         {/* ── tip ── */}
         {phase === 'tip' && (
           <div className="flex flex-col items-center gap-5 animate-fade-in text-center w-full">
-            <img src="/assets/labubu-happy.png" alt="Labubu"
+            <img src="./assets/labubu-happy.png" alt="Labubu"
               className="pixel-img animate-bounce-soft"
               style={{ width: 110, height: 110, objectFit: 'contain' }}
             />
