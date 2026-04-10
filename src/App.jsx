@@ -206,6 +206,7 @@ function buildPetObject(userData, petData) {
     graduated:          petData?.graduated ?? false,
     lastSleepScore:     null,
     daysSinceLastCheckIn: daysSince(petData?.last_woken_up),
+    hoursSinceLastAction: hoursSinceLastAction(petData?.last_tucked_in, petData?.last_woken_up),
     isSleeping:         isSleepWindow(petData?.last_tucked_in, petData?.last_woken_up),
   }
 }
@@ -226,6 +227,7 @@ function buildPetFromLocal(userData) {
     graduated:          petData?.graduated ?? false,
     lastSleepScore:     null,
     daysSinceLastCheckIn: daysSince(petData?.last_woken_up),
+    hoursSinceLastAction: hoursSinceLastAction(petData?.last_tucked_in, petData?.last_woken_up),
     isSleeping:         isSleepWindow(petData?.last_tucked_in, petData?.last_woken_up),
   }
 }
@@ -234,6 +236,13 @@ function daysSince(timestamp) {
   if (!timestamp) return 999
   const ms = Date.now() - new Date(timestamp).getTime()
   return Math.floor(ms / (1000 * 60 * 60 * 24))
+}
+
+function hoursSinceLastAction(lastTuckedIn, lastWokenUp) {
+  const timestamps = [lastTuckedIn, lastWokenUp].filter(Boolean).map(t => new Date(t).getTime())
+  if (timestamps.length === 0) return null
+  const mostRecent = Math.max(...timestamps)
+  return (Date.now() - mostRecent) / (1000 * 60 * 60)
 }
 
 function isSleepWindow(lastTuckedIn, lastWokenUp) {

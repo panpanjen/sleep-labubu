@@ -5,8 +5,8 @@ export function getLabubuState(pet, lastCheckIn = null, forceGrumpy = false) {
   // 1. Graduating — one-time celebration
   if (pet.graduating) return 'graduating'
 
-  // 2. Dramatically sad — 1+ day away
-  if (pet.daysSinceLastCheckIn >= 1) return 'miss-you'
+  // 2. Missed both tuck-in and wake-up for 24+ hours (null = never interacted → skip)
+  if (pet.hoursSinceLastAction !== null && pet.hoursSinceLastAction > 24) return 'miss-you'
 
   // 3. Sleeping — during sleep window (simplified: if tuckedIn flag set)
   if (pet.isSleeping) return 'sleeping'
